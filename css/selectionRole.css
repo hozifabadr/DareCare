@@ -1,0 +1,232 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'DM Sans', sans-serif;
+    background-color: rgba(250, 248, 243, 1);
+    color: #111;
+}
+
+.frame {
+    width: 1440px;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 48px 80px;
+    background-color: rgba(250, 248, 243, 1);
+}
+
+.container {
+    width: 1280px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+}
+
+.container .head {
+    width: 100%;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.frame .head>span {
+    text-transform: capitalize;
+    color: rgba(13, 117, 105, 1);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.frame .container h2 {
+    width: 1160px;
+    font-family: "Manrope", sans-serif;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 48px;
+    margin: 0 0 8px 0;
+}
+
+.frame .head .step-of-signup {
+    width: 132px;
+    height: 30px;
+    padding: 6px 10px;
+    border-radius: 999px;
+    background-color: rgba(223, 242, 237, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame .head .step-of-signup p {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 18px;
+    color: rgba(13, 117, 105, 1);
+    text-transform: uppercase;
+}
+
+/* المحتوى وتنسيق الكروت الثلاثة */
+.container .content .role-type {
+    width: 1052px;
+    gap: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+.content h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.content>p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 24px 0;
+}
+
+.role-type .box {
+    width: 340px;
+    min-height: 160px;
+    gap: 12px;
+    border: 2px solid rgba(220, 231, 227, 1);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    gap: 10px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.role-type .box h3 {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 24px;
+}
+
+.role-type .box .icon-container {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgba(223, 242, 237, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.role-type .admin .icon-container {
+    background-color: rgba(244, 233, 215, 1);
+}
+
+.role-type span i {
+    color: rgba(13, 117, 105, 1);
+    font-size: 16px;
+}
+
+.role-type .box .text {
+    display: flex;
+    flex-direction: column;
+    width: 242px;
+    height: 92px;
+    gap: 8px;
+
+}
+
+.role-type .box .text p {
+    margin: 0;
+    font-size: 12px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.selected-role {
+    border: 2px solid rgba(13, 117, 105, 1);
+    background-color: rgba(15, 56, 48, 0.12);
+
+}
+
+/* رسالة الأدمن */
+.admin-message {
+    width: 1160px;
+    border-radius: 12px;
+    padding: 10px 12px;
+    background-color: rgba(244, 233, 215, 1);
+}
+
+.admin-message p {
+    margin: 0;
+    color: rgba(24, 58, 55, 1);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+/* زر المتابعة (مطابق للصورة) */
+.continue-message {
+    width: 1160px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 13px 16px;
+    background-color: rgba(13, 117, 105, 0.45);
+    /* لون أخضر هادئ وشفاف */
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: not-allowed;
+}
+
+.continue-message p {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+/* زر تسجيل الدخول */
+form {
+    text-align: center;
+    width: 1160px;
+    height: 50px;
+    border-radius: 15px;
+    padding: 13px 16px;
+    background-color: rgba(238, 248, 245, 1);
+    border: 2px solid rgba(13, 117, 105, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form button {
+    width: 100%;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(13, 117, 105, 1);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
